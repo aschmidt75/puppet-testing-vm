@@ -1,0 +1,12 @@
+echo == copying sample to /home/vagrant
+
+cp -rp /vagrant/sample /home/vagrant
+
+
+echo ==
+echo == 
+echo == start two ssh session:
+echo '== 1. cd sample; guard'
+echo '== 2. cd sample; change spec or puppet modules'
+echo ==
+

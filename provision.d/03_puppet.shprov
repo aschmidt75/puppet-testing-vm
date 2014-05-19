@@ -1,0 +1,13 @@
+echo == Installation puppet, facter, vim-puppet, tabluar, puppet-lint
+
+cd /home/vagrant/.vim/bundle
+if [[ ! -d vim-puppet ]]; then
+	git clone https://github.com/rodjek/vim-puppet.git
+fi
+if [[ ! -d tabular ]]; then
+	git clone https://github.com/godlygeek/tabular.git
+fi
+sudo gem install puppet facter --no-ri --no-rdoc
+
+# syntax check 
+sudo gem install puppet-lint puppet-syntax --no-ri --no-rdoc
